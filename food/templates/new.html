@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="newitems">
+<form method="post" enctype="multipart/form-data">
+    
+    {% csrf_token %}
+    {{ form }}
+    <input class = "addbtn" type="submit" value="Add">
+</form>
+</div>
+{% endblock %}

@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+    </head>
+    <body>
+        {% block content%}
+        <div class="ab">
+            <div class="abt">
+                <div class="abt1">
+                    <i> About Us .....</i><br>
+                    Our journey began with a vision to create a haven for food enthusiasts, a place where flavors from around the world come together to dance on your palate. Nestled in [Location], our restaurant is more than just a place to eat; it's a celebration of taste, culture, and community.
+    
+                    At the core of our identity is a commitment to sourcing the freshest, highest quality ingredients. Our chefs, inspired by global culinary traditions, craft dishes that are a harmonious blend of creativity and authenticity. From the sizzling grills to the artfully plated desserts, each item on our menu is a testament to our unwavering dedication to excellence.
+                </div>
+                <div class="abt2">
+                    <img src="{% static "img/img1.png" %}">
+                </div>
+            </div>
+            <div class="test">
+                <section>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-10 col-xl-8 text-center">
+                            <h3 class="mb-4">Testimonials</h3>
+                            <p class="mb-4 pb-2 mb-md-5 pb-md-0"></p>
+                        </div>
+                    </div>
+                  
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-5 mb-md-0 testimonial-card">
+                            <div class="d-flex justify-content-center mb-4">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                                    class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h5 class="mb-3">Maria Smantha</h5>
+                           
+                            <p class="px-xl-3">
+                                <i class="fas fa-quote-left pe-2"></i>"Remarkable taste and unparalleled service – [Restaurant Name] consistently delivers a dining experience that leaves a lasting impression. Every visit is a gastronomic journey filled with culinary delights and attentive hospitality."
+                            </p>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-5 mb-md-0 testimonial-card">
+                            <div class="d-flex justify-content-center mb-4">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                                    class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h5 class="mb-3">Lisa Cudrow</h5>
+                            
+                            <p class="px-xl-3">
+                                <i class="fas fa-quote-left pe-2"></i>"Exceptional service and delectable flavors make dining at [Restaurant Name] a truly delightful experience. From the warm ambiance to the exquisite dishes, every visit leaves me eager to return for more culinary indulgence."
+                            </p>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 mb-0 testimonial-card">
+                            <div class="d-flex justify-content-center mb-4">
+                                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                                    class="rounded-circle shadow-1-strong" width="150" height="150" />
+                            </div>
+                            <h5 class="mb-3">John Smith</h5>
+                          
+                            <p class="px-xl-3">
+                                <i class="fas fa-quote-left pe-2"></i>"An unforgettable dining experience! The impeccable service and mouthwatering dishes at [Restaurant Name] always exceed my expectations, making it my go-to destination for culinary satisfaction."
+                            </p>
+                            <ul class="list-unstyled d-flex justify-content-center mb-0">
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-star fa-sm text-warning"></i>
+                                </li>
+                                <li>
+                                    <i class="far fa-star fa-sm text-warning"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        {% endblock  %}
+    </body>
+</html>
+
+

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+    </head>
+    <body>
+
+{% block content %}
+<div class="items">
+<a href="{% url "new" %}">Add</a>
+    </div>
+ 
+<div class="container">
+    <div class="row">
+        {% for i in items %}
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="/home/media/{{i.Img}}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">{{i.name}}</h5>
+                        <p class="card-text">{{i.description}}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        
+                        <li class="list-group-item"><b>Price:</b>{{i.price}}</li>
+                        <li class="list-group-item">
+                            {% if i.is_delivery_available %}
+                                Home delivery available
+                            {% else %}
+                                Home delivery not available
+                            {% endif %}
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="card-body">
+                        <a href="{% url 'update' name=i.name %}" class="card-link">Edit</a>
+
+                        <a href="{% url 'delete' name=i.name %}" class="card-link">Delete</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+</div>
+</div>
+{% endblock %}
+</body>
+</html>

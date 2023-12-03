@@ -1,0 +1,43 @@
+{% extends "base.html"%}
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+    </head>
+    <body>
+        
+     
+            {% block content %}
+    
+            {% csrf_token %}
+            <div class="dd1">
+
+            <div class="detail">
+            
+            <p><h1><u>{{detail.cat_name }}</u></h1></p>
+            
+            <p>{{detail.Description }}</p>
+            <p><img src="/home/media/{{detail.Image}}"></p>
+        </div>
+                   
+
+     
+       
+        <div class="items">
+            <a href="{% url "catego" detail.cat_name %}">Explore our menu</a>
+
+           
+        </div>
+    </div>
+
+{% endblock %}
+    </body>
+</html>
+

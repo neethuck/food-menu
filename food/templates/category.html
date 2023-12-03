@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "css/style.css" %}">
+    </head>
+    <body>
+       {%block content %}
+       <div class="cat_1">
+      
+       <div class="cc">
+       {% for n in det %}
+       <a href="{% url "det" n.cat_name %}">{{n.cat_name}}</a>
+       
+       {% endfor %}
+    </div>
+
+        </div>
+       {% endblock %}
+    </body>
+</html>
